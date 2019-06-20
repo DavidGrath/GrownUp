@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_edittext_height">40dp</dimen>
+    <dimen name="default_elevation">0.4dp</dimen>
+    <dimen name="indicator_size">18dp</dimen>
+</resources>

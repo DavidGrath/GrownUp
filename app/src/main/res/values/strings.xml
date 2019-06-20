@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GrownUp</string>
+    <string name="action_settings">Settings</string>
+    <string name="make_payment">Make a Payment</string>
+    <string name="cvc">CVC Code</string>
+    <string name="expire_on">Expire On</string>
+    <string name="card_number">Card Number</string>
+    <string name="cardholder_name">Cardholder Name</string>
+</resources>

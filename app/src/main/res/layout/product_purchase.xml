@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cardholder_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/cardholder_name"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardnumber_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/card_number"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cardholder_name_input" />
+
+    <TextView
+        android:id="@+id/expiry_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="53dp"
+        android:shadowColor="#000000"
+        android:text="@string/expire_on"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/cvc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/cvc"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/make_payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cardholder_name_input"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/default_edittext_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_button_name_cardnumber"
+        android:elevation="@dimen/default_elevation"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#000000"
+        android:translationZ="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardholder_label"
+        app:layout_constraintTop_toBottomOf="@+id/cardholder_label" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/default_edittext_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_button_name_cardnumber"
+        android:elevation="@dimen/default_elevation"
+        android:ems="10"
+        android:inputType="number"
+        android:shadowColor="#000000"
+        android:translationZ="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardnumber_label"
+        app:layout_constraintTop_toBottomOf="@+id/cardnumber_label" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="56dp"
+        android:layout_height="@dimen/default_edittext_height"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/expiry_background"
+        android:ems="10"
+        android:hint="mm"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/expiry_label"
+        app:layout_constraintTop_toBottomOf="@+id/expiry_label" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="72dp"
+        android:layout_height="@dimen/default_edittext_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/expiry_background"
+        android:ems="10"
+        android:hint="yyyy"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/expiry_label" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="77dp"
+        android:layout_height="@dimen/default_edittext_height"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cvc_background"
+        android:elevation="@dimen/default_elevation"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/cvc_label"
+        app:layout_constraintTop_toBottomOf="@+id/cvc_label" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+</android.support.constraint.ConstraintLayout>
